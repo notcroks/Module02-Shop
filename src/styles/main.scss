@@ -1,0 +1,43 @@
+$bg: #eee;
+$max-width: 500px;
+$pd: 15px;
+
+.box {
+    background-color: $bg;
+    max-width: $max-width;
+    padding: $pd;
+
+    &_title {
+        font-size: 38px;
+        text-align: center;
+    }
+
+    li {
+        font-size: 18px;
+        list-style-type: none;
+    }
+
+    ul {
+        background-color: rosybrown;
+        text-align: center;
+        padding: 0;
+    }
+
+    &_yellow {
+        color: orange;
+    }
+
+    &_red {
+        color: silver;
+    }
+
+    &_green {
+        color: green;
+    }
+
+    &_image {
+        display: block;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
