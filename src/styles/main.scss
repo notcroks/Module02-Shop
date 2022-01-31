@@ -40,4 +40,11 @@ $pd: 15px;
         max-width: 300px;
         margin: 0 auto;
     }
+    &_svg {
+        background: greenyellow;
+        fill: red;
+        &:hover {
+            fill: black;
+        }
+    }
 }
