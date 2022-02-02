@@ -34,7 +34,7 @@ module.exports = ({develop}) => ({
           },
           {
               test: /\.html$/i,
-              loader: "html-loader"
+              loader: 'html-loader'
           },
           {
               test: /\.css$/i,
