@@ -289,13 +289,24 @@ body {
 .link {
     color: $white;
     text-transform: uppercase;
-    padding: 2.3rem 4.2rem;
+    padding: 2.4rem 4.3rem;
     background-color: $orange;
     box-shadow: 0px 1rem 1.1rem 0.2rem rgba(207, 92, 13, 0.2);
     text-decoration: none;
     border-radius: 3.8rem;
     display: inline-block;
     letter-spacing: 0.13rem;
+    border: none;
+
+    &_min {
+        font-size: 1.4rem;
+        padding: 2rem 3.4rem;
+        box-shadow: 0px 1rem 1.1rem 0.17rem rgba(207, 92, 13, 0.15);
+    }
+
+    &_max {
+        padding: 2.3rem 4.8rem;                
+    }
 }
 
 .offer {
@@ -323,19 +334,19 @@ body {
     &-slide {
         border: 1px solid rgba($green, 0.4);
         border-radius: 2rem;
-        padding: 4rem 3.7rem;
+        padding: 3rem 3.7rem 3.8rem;
         box-sizing: border-box;
-        height: 520px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
         z-index: 0;
 
         &_white {
+            height: 520px;
+            display: flex;
+            flex-direction: column;
             justify-content: flex-end;
+            padding: 4rem 3.7rem;
 
             &:hover {
 
@@ -380,6 +391,21 @@ body {
             margin-bottom: 0;
         }
         
+        &__description {
+            font-size: 1.8rem;
+            color: rgba($green, 0.7);
+            margin-top: 2rem;
+            margin-bottom: 0;
+            min-height: 55px;
+            max-width: 300px;
+            line-height: 150%;
+        }
+
+        &__price {
+            font-size: 2.4rem;
+            margin-bottom: 3rem;
+        }
+
         &__hover {
             height: 0;
             opacity: 0;
@@ -423,12 +449,15 @@ body {
            position: relative;
            overflow: hidden;
            width: 100%;
-           height: 293px;
+           height: 322px;
            text-align: center;
         }
 
         &__image {
+            width: 100%;
+            max-width: 351px;
             height: 100%;
+            object-fit: contain;
         }
 
         &__footer {
@@ -479,6 +508,11 @@ body {
         padding: 0;
         background-position: center center;
         border-radius: 100%;
+        
+        &_min {
+            width: 40px;
+            height: 40px;
+        }
     }
 
     &__minus {
@@ -501,6 +535,10 @@ body {
         font-size: 2.4rem;
         width: 46px;
         border: none;
+
+        &_min {
+            width: 33px;
+        }
     }
 }
 
@@ -576,4 +614,188 @@ body {
 
 
 
+}
+
+.trends {
+    &__text {
+        margin-top: 4rem;
+    }
+}
+
+.catalog {
+    &__list {
+        margin-top: 8.5rem;
+        margin-bottom: 5rem;
+    }
+
+    &__btn {
+
+    }
+}
+
+.category {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    &__item {
+        flex-basis: 230px;
+        text-align: center;
+    }
+
+    &__link {
+        padding: 2.4rem 0;
+        border: 1px solid rgba($green, 0.5);
+        color: rgba($green, 0.5);
+        font-size: 1.8rem;
+        text-decoration: none;
+        border-radius: 4rem;
+        display: block;
+
+        &:hover {
+            border: 1px solid $orange;
+            color: $orange;
+        }
+    }
+}
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    
+    &__item {
+        border: 1px solid rgba($green, 0.4);
+        border-radius: 2rem;
+        padding: 2.7rem 3rem 3.8rem;
+        box-sizing: border-box;
+
+        &:hover {
+            box-shadow: 0 0 0 2px rgba($green, 0.4) inset;
+        }
+    }
+
+    &__cover {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 204px;
+        text-align: center;
+    }
+
+    &__image {
+        width: 100%;
+        max-width: 351px;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    &__title {
+        font-family: $font-cormorant;
+        font-size: 3rem;
+        color: $green;
+        margin-top: 1.7rem;
+        margin-bottom: 0;
+    }
+
+    &__description {
+        font-size: 1.6rem;
+        color: rgba($green, 0.7);
+        margin-top: 1.8rem;
+        margin-bottom: 0;
+        min-height: 61px;
+        min-width: 300px;
+        line-height: 150%;
+    }
+
+    &__price {
+        font-size: 2.4rem;
+        margin-bottom: 3rem;
+        margin-top: 0;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.contact {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    &-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__text {
+            max-width: 400px;
+            flex-grow: 1;
+        }
+
+        &__form {
+            flex-basis: 589px;
+        }
+    }
+}
+
+.card {
+    border: 2px solid rgba($green, 0.4);
+    padding: 3.2rem 5.8rem 4rem;
+    border-radius: 2rem;
+
+    &__title {
+        font-size: 30px;
+        font-family: $font-cormorant;
+        margin-top: 0;
+    }
+
+    &__label {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        display: block;
+        margin-left: 0.6rem;
+    }
+
+    &__input {
+        border: 1px solid rgba($green, 0.4);
+        border-radius: 2rem;
+        padding: 2.2rem 3rem;
+        margin-bottom: 2.8rem;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+
+        &:focus {
+            border: 1px solid rgba($green, 1);
+            outline: none;
+        }
+
+        &:invalid {
+            border: red;
+        }
+    }
+
+    &__check {
+        font-size: 1.2rem;
+        color: rgba($green, 0.6);
+        line-height: 150%;
+        max-width: 360px;
+        margin-top: 1.6rem;
+        margin-bottom: 0;
+    }
+
+    &__link {
+        margin-top: 1.2rem;
+    }
+
+    &__docs {
+        color: rgba($green, 0.6);
+        text-decoration: none;
+        border-bottom: 1px solid #ecedec;
+    }
 }
