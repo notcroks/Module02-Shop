@@ -249,7 +249,7 @@ body {
     &__olives {
         position: absolute;
         top: 796px;
-        left: 0px;
+        left: 29px;
         width: 10.5rem;
         z-index: -1;
     }
@@ -270,6 +270,10 @@ body {
         .title__span {
             display: block;
         }
+    }
+
+    &__about {
+        letter-spacing: 1px;
     }
 }
 
@@ -314,8 +318,8 @@ body {
     background-size: cover;
     background-position-x: center;
     background-repeat: no-repeat;
-    padding-top: 2rem;
-    padding-bottom: 12.8rem;
+    padding-top: 1.7rem;
+    padding-bottom: 13.1rem;
 
     &__text {
         margin-top: 6rem;
@@ -543,23 +547,23 @@ body {
 }
 
 .about {
-    /*background-image: url(../images/offer.png);
+    background-image: url(../images/about.png);
     background-size: cover;
     background-position-x: center;
-    background-repeat: no-repeat;*/
+    background-repeat: no-repeat;
     padding-top: 37px;
-    padding-bottom: 100px;
+    padding-bottom: 154px;
 
     &__box {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 7rem;
+        margin-top: 7.8rem;
     }
 
     &__text {
-        margin-left: 12rem;
-        flex-basis: 620px;
+        margin-left: 11.5rem;
+        flex-basis: 615px;
     }
 
     &__list {
@@ -617,19 +621,58 @@ body {
 }
 
 .trends {
+    background-image: url(../images/trends.png);
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    padding-top: 30px;
+    padding-bottom: 135px;
+
     &__text {
-        margin-top: 4rem;
+        margin-top: 3.89rem;
+        letter-spacing: 1px;
     }
 }
 
 .catalog {
+    background-image: url(../images/catalog.png);
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    padding-top: 59px;
+    padding-bottom: 100px;
+
     &__list {
         margin-top: 8.5rem;
         margin-bottom: 5rem;
     }
 
     &__btn {
+        cursor: pointer;
+        margin: 6.1rem auto 0;
+        border: none;
+        background-color: transparent;
+        text-transform: uppercase;
+        color: $green;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        letter-spacing: 1px;
+        opacity: 0.8;
 
+        &::before {
+            content: '';
+            display: block;
+            background-image: url(../images/refresh.png);
+            width: 25px;
+            height: 25px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
     }
 }
 
@@ -723,7 +766,21 @@ body {
     }
 }
 
+.delivery {
+    background-image: url(../images/delivery.png);
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    /*padding-top: 37px;
+    padding-bottom: 100px;*/
+
+}
+
 .contact {
+    background-image: url(../images/contact.png);
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
     padding-top: 100px;
     padding-bottom: 100px;
 
