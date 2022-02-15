@@ -364,6 +364,7 @@ body {
                     background-color:rgba($white, 0.55);
                     width: calc(100% - 4px);
                     height: calc(100% - 4px);
+                    border-radius: 2rem;
                     position: absolute;
                     top: 2px;
                     left: 2px;
@@ -640,7 +641,7 @@ body {
     background-position-x: center;
     background-repeat: no-repeat;
     padding-top: 59px;
-    padding-bottom: 100px;
+    padding-bottom: 135px;
 
     &__list {
         margin-top: 8.5rem;
@@ -649,21 +650,21 @@ body {
 
     &__btn {
         cursor: pointer;
-        margin: 6.1rem auto 0;
+        margin: 6rem auto 0;
         border: none;
         background-color: transparent;
         text-transform: uppercase;
         color: $green;
         display: flex;
         align-items: center;
-        gap: 2rem;
+        gap: 1.8rem;
         letter-spacing: 1px;
         opacity: 0.8;
 
         &::before {
             content: '';
             display: block;
-            background-image: url(../images/refresh.png);
+            background-image: url(../images/refresh.svg);
             width: 25px;
             height: 25px;
             background-size: cover;
@@ -771,8 +772,90 @@ body {
     background-size: cover;
     background-position-x: center;
     background-repeat: no-repeat;
-    /*padding-top: 37px;
-    padding-bottom: 100px;*/
+    padding-top: 4px;
+    padding-bottom: 137px;
+
+    &-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 4.4rem;
+        margin-left: 12.5rem;
+        line-height: 150%;
+
+        &__text {
+            max-width: 570px;
+            flex-grow: 1;
+        }
+
+        &__pay {
+            flex-basis: 589px;
+        }
+    }
+
+    &__description {
+        margin-top: 3rem;
+        margin-bottom: 0;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $green;
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            background-color: #858881;
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 1px;
+        }
+    }
+
+    &__price {
+        color: $orange;
+    }
+
+    &__list {
+        display: flex;
+        gap: 3rem;
+        list-style: none;
+        margin-top: 4rem;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+
+    &__item {
+        flex-basis: 230px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        cursor: pointer;
+        opacity: 0.4;
+        height: 32px;        
+
+        &__mc {
+            background-image: url(../images/pay/mc.png);
+            max-width: 53px;
+        }
+
+        &__visa{
+            background-image: url(../images/pay/visa.png);
+            max-width: 74px;
+        }
+
+        &__pp{
+            background-image: url(../images/pay/pp.png);
+            max-width: 87px;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+    }
 
 }
 
@@ -781,7 +864,7 @@ body {
     background-size: cover;
     background-position-x: center;
     background-repeat: no-repeat;
-    padding-top: 100px;
+    padding-top: 79px;
     padding-bottom: 100px;
 
     &-box {
@@ -792,13 +875,61 @@ body {
         &__text {
             max-width: 400px;
             flex-grow: 1;
+            margin-top: 6.2rem;
+            margin-left: 12.3rem;
+            line-height: 175%;
+            letter-spacing: 0.9px;
         }
 
         &__form {
             flex-basis: 589px;
         }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 2rem;
+            padding-left: 0;
+            margin-top: 5.8rem;
+            list-style: none;
+        }
+
+        &__tel, &__mail {
+            text-decoration: none;
+            font-size: 2.4rem;
+            font-weight: 500;
+            color: $green;
+            display: flex;
+            align-items: center;
+            gap: 3.4rem;
+            letter-spacing: 0;
+
+            &::before {
+                content: '';
+                display: block;
+                width: 2.5rem;
+                height: 2.5rem;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+       
+        &__tel {
+            &::before {
+                background-image: url(../images/phone.svg);
+            }
+        }
+        
+        &__mail {
+            &::before {
+                background-image: url(../images/mail.svg);
+            }
+        }
     }
 }
+
+    
 
 .card {
     border: 2px solid rgba($green, 0.4);
