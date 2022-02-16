@@ -777,6 +777,7 @@ body {
 
     &-box {
         display: flex;
+        gap: 12%;
         align-items: center;
         justify-content: space-between;
         margin-top: 4.4rem;
@@ -784,12 +785,11 @@ body {
         line-height: 150%;
 
         &__text {
-            max-width: 570px;
-            flex-grow: 1;
+            flex-basis: 44%;
         }
 
         &__pay {
-            flex-basis: 589px;
+            flex-basis: 37%;
         }
     }
 
@@ -811,7 +811,7 @@ body {
             display: block;
             position: absolute;
             left: 0;
-            bottom: 1px;
+            bottom: 3px;
         }
     }
 
@@ -860,13 +860,7 @@ body {
 }
 
 .contact {
-    background-image: url(../images/contact.png);
-    background-size: cover;
-    background-position-x: center;
-    background-repeat: no-repeat;
-    padding-top: 79px;
-    padding-bottom: 100px;
-
+    
     &-box {
         display: flex;
         align-items: center;
@@ -908,8 +902,8 @@ body {
             &::before {
                 content: '';
                 display: block;
-                width: 2.5rem;
-                height: 2.5rem;
+                width: 3rem;
+                height: 3rem;
                 background-size: cover;
                 background-repeat: no-repeat;
             }
@@ -918,6 +912,7 @@ body {
         &__tel {
             &::before {
                 background-image: url(../images/phone.svg);
+                background-size: 29px 30px;
             }
         }
         
@@ -986,4 +981,13 @@ body {
         text-decoration: none;
         border-bottom: 1px solid #ecedec;
     }
+}
+
+.footer {
+    background-image: url(../images/contact.png);
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    padding-top: 79px;
+    padding-bottom: 100px;
 }
