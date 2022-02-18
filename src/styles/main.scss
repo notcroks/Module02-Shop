@@ -2,6 +2,7 @@
 
 $green: #27300f;
 $orange: #d26a22;
+$dark-orange: #cf5c0d;
 $white: #fff;
 
 $font-jost: 'Jost', sans-serif;
@@ -36,8 +37,11 @@ body {
     &__link {
         color: $green;
         text-decoration: none;
+        transition: 0.3s;
+
         &:hover {
             color: $orange;
+            transition: 0.3s;
         }
     }
 
@@ -45,8 +49,11 @@ body {
         color: $green;
         font-weight: 500;
         text-decoration: none;
+        transition: 0.3s;
+
         &:hover {
             color: $orange;
+            transition: 0.3s;
         }
     }
 
@@ -62,9 +69,12 @@ body {
         background-size: 1.7rem 1.5rem;
         position: relative;
         border: 1px solid $orange;
+        transition: 0.3s;
+
         &:hover {
             background-color: $green;
             border: 1px solid $green;
+            transition: 0.3s;
         }
     }
 
@@ -164,6 +174,7 @@ body {
             &::before {
                 background-color: $orange;
                 box-shadow: 0 0 0 4px $white, 0 0 0 5px $orange;
+                transition: 0.3s;
             }
             
         }
@@ -182,9 +193,12 @@ body {
             top: 41px;
             left: 67px;
             line-height: 150%;
+            transition: 0.3s;
+
             &::before {
                 bottom: 12px;
                 right: -35px;
+                transition: 0.3s;
             }
         }
 
@@ -192,9 +206,12 @@ body {
             top: 188px;
             right: 2px;
             line-height: 150%;
+            transition: 0.3s;
+
             &::before {
                 bottom: 17px;
                 left: -25px;
+                transition: 0.3s;
             }
         }
 
@@ -202,9 +219,12 @@ body {
             bottom: -46px;
             right: 244px;
             line-height: 150%;
+            transition: 0.3s;
+
             &::before {
                 top: -15px;
                 left: 13px;
+                transition: 0.3s;
             }
         }
     }
@@ -301,6 +321,12 @@ body {
     display: inline-block;
     letter-spacing: 0.13rem;
     border: none;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: $dark-orange;
+    }
 
     &_min {
         font-size: 1.4rem;
@@ -835,7 +861,9 @@ body {
         background-position: center center;
         cursor: pointer;
         opacity: 0.4;
-        height: 32px;        
+        height: 32px;
+        transform: scale(1);     
+        transition: 0.3s;
 
         &__mc {
             background-image: url(../images/pay/mc.png);
@@ -854,6 +882,7 @@ body {
 
         &:hover {
             opacity: 1;
+            transform: scale(1.05);     
         }
     }
 
@@ -990,4 +1019,169 @@ body {
     background-repeat: no-repeat;
     padding-top: 79px;
     padding-bottom: 100px;
+
+    &__box {
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        margin-top: 74px;
+        margin-bottom: 54px;
+
+        & .logo {
+            transform: scale(1.5);
+            margin-left: 35px;
+            margin-bottom: 100px;
+        }
+    }
+
+    &__list {
+        margin-bottom: 22px;
+        list-style: none;
+    }
+
+    &__item {
+        margin-bottom: 30px;
+        letter-spacing: 1.3px;
+    }
+    
+    &__link {
+        color: $green;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-basis: 220px;
+    }
+
+    &__tel {
+        font-size: 26px;
+        color: $green;
+        margin-bottom: 35px;
+        text-decoration: none;
+
+        &:hover {
+            color: $orange;
+        }
+    }
+
+    &__email {
+        font-size: 18px;
+        color: $green;
+        margin-bottom: 30px;
+        text-decoration: none;
+
+        &:hover {
+            color: $orange;
+        }
+    }
+
+    &-social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        list-style: none;
+
+        &__vk {
+            display: flex;
+            opacity: 0.8;
+
+            &::before {
+                content: '';
+                width: 50px;
+                height: 50px;
+                background-image: url(../images/social/vk.svg);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: 25px;
+                border: 1px solid rgba($green, 0.4);
+                border-radius: 100%;
+                opacity: 0.8;
+            }
+
+            &:hover {
+                opacity: 1;
+
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &__inst {
+            display: flex;
+            opacity: 0.8;
+
+            &::before {
+                content: '';
+                width: 50px;
+                height: 50px;
+                background-image: url(../images/social/inst.svg);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: 20px;
+                border: 1px solid rgba($green, 0.4);
+                border-radius: 100%;
+            }
+
+            &:hover {
+                opacity: 1;
+
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &__fb {
+            display: flex;
+            opacity: 0.8;
+
+            &::before {
+                content: '';
+                width: 50px;
+                height: 50px;
+                background-image: url(../images/social/fb.svg);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: 20px;
+                border: 1px solid rgba($green, 0.4);
+                border-radius: 100%;
+            }
+
+            &:hover {
+                opacity: 1;
+
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &__text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.6rem;
+        opacity: 0.6;
+    }
+
+    &__author {
+        opacity: 0.6;
+
+        & a {
+            color: $green;
+            font-weight: 500;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+    }
 }
+
