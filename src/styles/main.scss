@@ -25,6 +25,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 8rem;
+
+    &__navigation {
+        flex-grow: 1;
+        margin-left: 4rem;
+    }
 
     &__nav {
         display: flex;
@@ -49,6 +55,9 @@ body {
         color: $green;
         font-weight: 500;
         text-decoration: none;
+        flex-basis: 200px;
+        letter-spacing: 0.13rem;
+        text-align: right;
         transition: 0.3s;
 
         &:hover {
@@ -59,7 +68,7 @@ body {
 
     &__cart {
         display: block;
-        width: 4rem;
+        flex-basis: 4rem;
         height: 4rem;
         border-radius: 100%;
         background-color: $orange;
@@ -93,7 +102,7 @@ body {
     background-image: url(../images/logo.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 12rem;
+    flex-basis: 12rem;
     height: 3.2rem;
 }
 
@@ -155,8 +164,8 @@ body {
 
     &__image{
         width: 92%;
-        box-shadow: 2rem 4rem 2.1rem -0.8rem rgb(141 153 136 / 43%);
-        border-radius: 42rem;
+        border-radius: 100%;
+        animation: shadow 5s linear infinite;
     }
 
     &__text {
@@ -254,8 +263,8 @@ body {
 
     &__cucumber {
         position: absolute;
-        top: -2px;
-        left: 741px;
+        top: 0;
+        left: 719px;
         width: 8.5rem;
         z-index: -1;
     }
@@ -1227,3 +1236,14 @@ body {
     }
 }
 
+@keyframes shadow {
+    0% {
+        box-shadow: 0 0 0 0 rgba($green, 0.5);
+    }
+    50% {
+        box-shadow: 2rem 3rem 3.3rem 0 rgba(141 153 136 / 0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba($green, 0.5);
+    }
+}
