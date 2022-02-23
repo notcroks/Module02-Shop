@@ -16,6 +16,11 @@ body {
     font-size: 1.6rem;
     font-family: $font-jost;
     color: $green;
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 .header {
@@ -114,11 +119,6 @@ body {
 }
 
 .main {
-    background-image: url(../images/main.png);
-    background-size: cover;
-    background-position-x: center;
-    background-repeat: no-repeat;
-    position: relative;
     padding-bottom: 187px;
     z-index: 0;
 
@@ -351,10 +351,6 @@ body {
 }
 
 .offer {
-    background-image: url(../images/offer.png);
-    background-size: cover;
-    background-position-x: center;
-    background-repeat: no-repeat;
     padding-top: 1.7rem;
     padding-bottom: 13.1rem;
 
@@ -552,6 +548,7 @@ body {
         background-color: transparent;
         padding: 0;
         background-position: center center;
+        background-repeat: no-repeat;
         border-radius: 100%;
         
         &_min {
@@ -564,15 +561,12 @@ body {
         pointer-events: none;
         background-image: url(../images/minus-counter.svg);
         background-size: 20px 11px;
-        background-repeat: no-repeat;
         opacity: 0.4;
     }
 
     &__plus {
-        pointer-events: none;
         background-image: url(../images/plus-counter.svg);
         background-size: 20px 11px;
-        background-repeat: no-repeat;
     }
 
     &__input {
@@ -588,10 +582,6 @@ body {
 }
 
 .about {
-    background-image: url(../images/about.png);
-    background-size: cover;
-    background-position-x: center;
-    background-repeat: no-repeat;
     padding-top: 37px;
     padding-bottom: 154px;
 
@@ -662,10 +652,6 @@ body {
 }
 
 .trends {
-    background-image: url(../images/trends.png);
-    background-size: cover;
-    background-position-x: center;
-    background-repeat: no-repeat;
     padding-top: 30px;
     padding-bottom: 135px;
 
@@ -676,10 +662,6 @@ body {
 }
 
 .catalog {
-    background-image: url(../images/catalog.png);
-    background-size: cover;
-    background-position-x: center;
-    background-repeat: no-repeat;
     padding-top: 59px;
     padding-bottom: 135px;
 
@@ -811,10 +793,6 @@ body {
 }
 
 .delivery {
-    background-image: url(../images/delivery.png);
-    background-size: cover;
-    background-position-x: center;
-    background-repeat: no-repeat;
     padding-top: 4px;
     padding-bottom: 137px;
 
@@ -954,6 +932,10 @@ body {
                 background-size: cover;
                 background-repeat: no-repeat;
             }
+
+            &:hover {
+                color: $orange;
+            }
         }
        
         &__tel {
@@ -1032,19 +1014,12 @@ body {
     }
 }
 
-.footer-hr {
-    display: block;
-    border: none;
-    height: 1px;
-    background-image: url(../images/hr.png);
-    margin: 0;
+footer {
+    border-top: 1px solid #d4d6cf;
+    padding-bottom: 7rem;
 }
 
 .footer {
-    background-image: url(../images/contact.png);
-    background-size: cover;
-    background-position-x: center;
-    background-repeat: no-repeat;
     padding-top: 79px;
     padding-bottom: 100px;
 
