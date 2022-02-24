@@ -173,6 +173,7 @@ body {
     }
 
     &__btn {
+        cursor: pointer;
         background-color: transparent;
         border: none;
         padding: 0;
@@ -247,7 +248,7 @@ body {
 
     &__tomato {
         position: absolute;
-        bottom: 122px;
+        top: 839px;
         right: 151px;
         width: 11rem;
         z-index: -1;
@@ -377,6 +378,7 @@ body {
         background-size: cover;
         position: relative;
         z-index: 0;
+        transition: 0.3s;
 
         &_white {
             height: 520px;
@@ -823,6 +825,7 @@ body {
         text-decoration: none;
         color: $green;
         position: relative;
+        transition: 0.3s;
 
         &::after {
             content: '';
@@ -833,6 +836,14 @@ body {
             position: absolute;
             left: 0;
             bottom: 3px;
+        }
+
+        &:hover {
+            color: $orange;
+
+            &::after {
+                background-color: $orange;
+            }
         }
     }
 
@@ -1011,6 +1022,11 @@ body {
         color: rgba($green, 0.6);
         text-decoration: none;
         border-bottom: 1px solid #ecedec;
+        transition: 0.3s;
+
+        &:hover {
+            color: rgba($green, 1);
+        }
     }
 }
 
