@@ -48,6 +48,9 @@ body {
     @media (max-width: $r_desk_1280) {
         gap: 3%;
     }
+    @media (max-width: $r_tab) {
+        margin-bottom: 0;
+    }
 
     &__navigation {
         flex-grow: 1;
@@ -228,6 +231,9 @@ body {
 .main {
     padding-bottom: 187px;
     z-index: 0;
+    @media (max-width: $r_tab) {
+        padding-bottom: 1rem;
+    }
 
     &__item {
         margin-left: 12.2rem;
@@ -449,6 +455,18 @@ body {
         right: 151px;
         width: 11rem;
         z-index: -1;
+        @media (max-width: $r_desk_full_1750) {
+            width: 9.8rem;
+            right: 88px;
+        }
+        @media (max-width: $r_desk_hd) {
+            top: 750px;
+        }
+        @media (max-width: $r_desk_1120) {
+            width: 8rem;
+            top: 100px;
+            left: -15px;
+        }
     }
 
     &__avocado {
@@ -470,6 +488,19 @@ body {
         left: 719px;
         width: 8.5rem;
         z-index: -1;
+        @media (max-width: $r_desk_hd) {
+            left: 500px;
+            width: 7.5rem;
+        }
+        @media (max-width: $r_desk_1120) {
+            top: 700px;
+            right: -19px;
+            left: auto;
+            transform: rotate(90deg)
+        }
+        @media (max-width: $r_tab) {
+            top: 630px;
+        }
     }
 
     &__pepper {
@@ -481,6 +512,12 @@ body {
         @media (max-width: $r_desk_full_1750) {
             display: none;
         }
+        @media (max-width: $r_tab) {
+            display: block;
+            width: 5rem;
+            top: 350px;
+            left: 0;
+        }
     }
     
 
@@ -490,6 +527,13 @@ body {
         left: 0;
         width: 10.5rem;
         z-index: -1;
+        @media (max-width: $r_desk_hd) {
+            top: 700px;
+            width: 8rem;
+        }
+        @media (max-width: $r_tab) {
+            display: none;
+        }
     }
 }
 
@@ -574,13 +618,23 @@ body {
     }
 
     &_max {
-        padding: 2.3rem 4.8rem;                
+        padding: 2.3rem 4.8rem;
+        @media (max-width: $r_desk_full_1750) {
+            padding: 2rem 4rem;
+        }
+        @media (max-width: $r_desk_1350) {
+            margin: 0 auto;
+        }                
     }
 }
 
 .offer {
     padding-top: 1.7rem;
     padding-bottom: 13.1rem;
+    @media (max-width: $r_tab) {
+        padding-top: 0;
+        padding-bottom: 6rem;
+    }
 
     &__text {
         margin-top: 6rem;
@@ -743,6 +797,10 @@ body {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            @media (max-width: $r_desk_1350) {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
         }
     }
 
@@ -801,6 +859,10 @@ body {
 
 .counter {
     display: flex;
+    @media (max-width: $r_desk_1350) {
+        flex-basis: 100%;
+        justify-content: center;
+    }
 
     &__btn {
         cursor: pointer;
@@ -812,6 +874,10 @@ body {
         background-position: center center;
         background-repeat: no-repeat;
         border-radius: 100%;
+        @media (max-width: $r_desk_full_1750) {
+            width: 47px;
+            height: 47px;
+        }
         
         &_min {
             width: 40px;
@@ -846,12 +912,23 @@ body {
 .about {
     padding-top: 37px;
     padding-bottom: 154px;
+    @media (max-width: $r_tab) {
+        padding-bottom: 6rem;
+    }
 
     &__box {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-top: 7.8rem;
+        @media (max-width: $r_desk_1350) {
+            gap: 2rem;
+        }
+        @media (max-width: $r_tab) {
+            flex-direction: column;
+            gap: 4rem;
+            margin-top: 4rem;
+        }
     }
 
     &__text {
@@ -864,9 +941,9 @@ body {
             margin-left: 4rem;
         }
         @media (max-width: $r_tab) {
-            /*max-width: 100%;*/
+            max-width: 100%;
             margin-left: 0;
-            /*margin-top: 3rem;*/
+            flex-basis: auto;
         }
     }
 
@@ -879,6 +956,14 @@ body {
         font-size: 3rem;
         margin: 0;
         padding-left: 0;
+        @media (max-width: $r_desk_1350) {
+            gap: 5rem;
+            font-size: 2.2rem;
+        }
+        @media (max-width: $r_desk) {
+            gap: 3rem;
+            font-size: 2rem;
+        }
     }
 
     &__item {
@@ -974,15 +1059,21 @@ body {
 }
 
 .category {
-    list-style-type: none;
-    padding-left: 0;
     display: flex;
     align-items: center;
+    list-style-type: none;
+    padding-left: 0;
     gap: 2rem;
+    @media (max-width: $r_desk_1280) {
+        flex-wrap: wrap;
+    }
 
     &__item {
         flex-basis: 230px;
         text-align: center;
+        @media (max-width: $r_desk_1350) {
+            flex-basis: 200px;
+        }
     }
 
     &__link {
@@ -994,6 +1085,7 @@ body {
         border-radius: 4rem;
         display: block;
         transition: 0.3s;
+        
 
         &:hover {
             border: 1px solid $orange;
@@ -1077,6 +1169,17 @@ body {
         margin-top: 4.4rem;
         margin-left: 12.5rem;
         line-height: 150%;
+        @media (max-width: $r_desk_1280) {
+            margin-left: 8rem;
+        }
+        @media (max-width: $r_desk_1120) {
+            margin-left: 4rem;
+        }
+        @media (max-width: $r_tab) {
+            /*max-width: 100%;*/
+            margin-left: 0;
+            /*margin-top: 3rem;*/
+        }
 
         &__text {
             flex-basis: 44%;
@@ -1180,6 +1283,17 @@ body {
             margin-left: 12.3rem;
             line-height: 175%;
             letter-spacing: 0.9px;
+            @media (max-width: $r_desk_1280) {
+                margin-left: 8rem;
+            }
+            @media (max-width: $r_desk_1120) {
+                margin-left: 4rem;
+            }
+            @media (max-width: $r_tab) {
+                /*max-width: 100%;*/
+                margin-left: 0;
+                /*margin-top: 3rem;*/
+            }
         }
 
         &__form {
