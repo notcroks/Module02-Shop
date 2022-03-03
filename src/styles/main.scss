@@ -624,7 +624,7 @@ body {
         }
         @media (max-width: $r_desk_1350) {
             margin: 0 auto;
-        }                
+        }
     }
 }
 
@@ -666,7 +666,7 @@ body {
         position: relative;
         z-index: 0;
         transition: 0.3s;
-
+        
         &_white {
             height: 520px;
             display: flex;
@@ -720,6 +720,12 @@ body {
             font-size: 3rem;
             color: $green;
             margin-bottom: 0;
+            @media (max-width: $r_desk_1280) {
+                font-size: 2.6rem;
+            }
+            @media (max-width: $r_tab_900) {
+                text-align: center;
+            }
         }
         
         &__description {
@@ -730,11 +736,25 @@ body {
             min-height: 55px;
             max-width: 300px;
             line-height: 150%;
+            @media (max-width: $r_desk_1280) {
+                font-size: 1.65rem;
+            }
+            @media (max-width: $r_tab_900) {
+                text-align: center;
+                margin: 0 auto;
+                margin-top: 2rem;
+            }
         }
 
         &__price {
             font-size: 2.4rem;
             margin-bottom: 3rem;
+            @media (max-width: $r_desk_1280) {
+                font-size: 2.2rem;
+            }
+            @media (max-width: $r_tab_900) {
+                text-align: center;
+            }
         }
 
         &__hover {
@@ -779,11 +799,14 @@ body {
         }
 
         &__cover {
-           position: relative;
-           overflow: hidden;
-           width: 100%;
-           height: 322px;
-           text-align: center;
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 322px;
+            text-align: center;
+            @media (max-width: $r_desk_hd) {
+                height: 200px;
+            }
         }
 
         &__image {
@@ -800,6 +823,9 @@ body {
             @media (max-width: $r_desk_1350) {
                 flex-wrap: wrap;
                 gap: 1rem;
+            }
+            @media (max-width: $r_desk) {
+                flex-wrap: nowrap;
             }
         }
     }
@@ -863,6 +889,13 @@ body {
         flex-basis: 100%;
         justify-content: center;
     }
+    @media (max-width: $r_desk_1350) {
+        flex-basis: content;
+    }
+    @media (max-width: $r_tab_900) {
+        display: none;
+    }
+
 
     &__btn {
         cursor: pointer;
@@ -877,6 +910,10 @@ body {
         @media (max-width: $r_desk_full_1750) {
             width: 47px;
             height: 47px;
+        }
+        @media (max-width: $r_tab_900) {
+            width: 40px;
+            height: 40px;
         }
         
         &_min {
@@ -902,6 +939,12 @@ body {
         font-size: 2.4rem;
         width: 46px;
         border: none;
+        @media (max-width: $r_desk_1280) {
+            font-size: 2.2rem;
+        }
+        @media (max-width: $r_tab_900) {
+            width: 36px;
+        }
 
         &_min {
             width: 33px;
