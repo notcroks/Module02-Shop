@@ -721,7 +721,10 @@ body {
             color: $green;
             margin-bottom: 0;
             @media (max-width: $r_desk_1280) {
-                font-size: 2.6rem;
+                font-size: 2.4rem;
+            }
+            @media (max-width: $r_desk_1120) {
+                font-size: 2.15rem;
             }
             @media (max-width: $r_tab_900) {
                 text-align: center;
@@ -737,7 +740,7 @@ body {
             max-width: 300px;
             line-height: 150%;
             @media (max-width: $r_desk_1280) {
-                font-size: 1.65rem;
+                font-size: 1.5rem;
             }
             @media (max-width: $r_tab_900) {
                 text-align: center;
@@ -889,7 +892,7 @@ body {
         flex-basis: 100%;
         justify-content: center;
     }
-    @media (max-width: $r_desk_1350) {
+    @media (max-width: $r_desk) {
         flex-basis: content;
     }
     @media (max-width: $r_tab_900) {
@@ -1128,6 +1131,10 @@ body {
         border-radius: 4rem;
         display: block;
         transition: 0.3s;
+        @media (max-width: $r_desk_1280) {
+            padding: 2rem 0;
+            font-size: 1.65rem;
+        }
         
 
         &:hover {
@@ -1216,6 +1223,7 @@ body {
             margin-left: 8rem;
         }
         @media (max-width: $r_desk_1120) {
+            gap: 5%;
             margin-left: 4rem;
         }
         @media (max-width: $r_tab) {
@@ -1226,10 +1234,16 @@ body {
 
         &__text {
             flex-basis: 44%;
+            @media (max-width: $r_desk_1120) {
+                flex-basis: 47%;
+            }
         }
 
         &__pay {
             flex-basis: 37%;
+            @media (max-width: $r_desk_1120) {
+                flex-basis: 50%;
+            }
         }
     }
 
