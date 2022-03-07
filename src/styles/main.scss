@@ -615,6 +615,12 @@ body {
         font-size: 1.4rem;
         padding: 2rem 3.4rem;
         box-shadow: 0px 1rem 1.1rem 0.17rem rgba(207, 92, 13, 0.15);
+        @media (max-width: $r_desk_full_1750) {
+            padding: 2rem 3.4rem;
+        }
+        @media (max-width: $r_desk_1350) {
+            margin: 0 auto;
+        }
     }
 
     &_max {
@@ -1010,6 +1016,9 @@ body {
             gap: 3rem;
             font-size: 2rem;
         }
+        @media (max-width: $r_tab) {
+            gap: 4rem;
+        }
     }
 
     &__item {
@@ -1149,12 +1158,18 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    @media (max-width: $r_tab) {
+        grid-template-columns: repeat(2, 1fr);
+    }
     
     &__item {
         border: 1px solid rgba($green, 0.4);
         border-radius: 2rem;
         padding: 2.7rem 3rem 3.8rem;
         box-sizing: border-box;
+        @media (max-width: $r_desk_full_1750) {
+            padding: 2rem 2rem; 
+        }
 
         &:hover {
             box-shadow: 0 0 0 2px rgba($green, 0.4) inset;
@@ -1182,6 +1197,15 @@ body {
         color: $green;
         margin-top: 1.7rem;
         margin-bottom: 0;
+        @media (max-width: $r_desk_1280) {
+            font-size: 2.4rem;
+        }
+        @media (max-width: $r_desk_1120) {
+            font-size: 2.15rem;
+        }
+        @media (max-width: $r_tab_900) {
+            text-align: center;
+        }
     }
 
     &__description {
@@ -1192,12 +1216,30 @@ body {
         min-height: 61px;
         min-width: 300px;
         line-height: 150%;
+        @media (max-width: $r_desk_1280) {
+            font-size: 1.4rem;
+        }
+        @media (max-width: $r_tab_900) {
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 1rem;
+        }
+        @media (max-width: $r_tab) {
+            min-width: 240px;
+        }
     }
 
     &__price {
         font-size: 2.4rem;
         margin-bottom: 3rem;
         margin-top: 0;
+        @media (max-width: $r_desk_1280) {
+            font-size: 2.2rem;
+        }
+        @media (max-width: $r_tab_900) {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
     }
 
     &__footer {
@@ -1227,9 +1269,8 @@ body {
             margin-left: 4rem;
         }
         @media (max-width: $r_tab) {
-            /*max-width: 100%;*/
             margin-left: 0;
-            /*margin-top: 3rem;*/
+            flex-direction: column;
         }
 
         &__text {
@@ -1242,7 +1283,7 @@ body {
         &__pay {
             flex-basis: 37%;
             @media (max-width: $r_desk_1120) {
-                flex-basis: 50%;
+                flex-basis: 47%;
             }
         }
     }
@@ -1289,6 +1330,9 @@ body {
         margin-top: 4rem;
         margin-bottom: 0;
         padding-left: 0;
+        @media (max-width: $r_tab) {
+            justify-content: center;
+        }
     }
 
     &__item {
@@ -1332,6 +1376,13 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @media (max-width: $r_tab_900) {
+            gap: 2rem;
+        }
+        @media (max-width: $r_tab) {
+            flex-direction: column;
+            gap: 6rem;
+        }
 
         &__text {
             max-width: 400px;
@@ -1347,14 +1398,32 @@ body {
                 margin-left: 4rem;
             }
             @media (max-width: $r_tab) {
-                /*max-width: 100%;*/
+                max-width: 100%;
                 margin-left: 0;
-                /*margin-top: 3rem;*/
+                margin-top: 5rem;
             }
         }
 
         &__form {
             flex-basis: 589px;
+            @media (max-width: $r_desk_1350) {
+                flex-basis: 530px;
+            }
+            @media (max-width: $r_desk_1280) {
+                flex-basis: 500px;
+            }
+            @media (max-width: $r_desk_1120) {
+                flex-basis: 430px;
+            }
+            @media (max-width: $r_desk) {
+                flex-basis: 400px;
+            }
+            @media (max-width: $r_tab_900) {
+                flex-basis: 350px;
+            }
+            @media (max-width: $r_tab) {
+                flex-basis: 350px;
+            }
         }
 
         &__list {
@@ -1365,6 +1434,10 @@ body {
             padding-left: 0;
             margin-top: 5.8rem;
             list-style: none;
+            @media (max-width: $r_tab) {
+                flex-direction: row;
+                margin-top: 3rem;
+            }
         }
 
         &__tel, &__mail {
@@ -1376,6 +1449,10 @@ body {
             align-items: center;
             gap: 3.4rem;
             letter-spacing: 0;
+            @media (max-width: $r_tab) {
+                font-size: 2rem;
+                gap: 2.5rem;
+            }
 
             &::before {
                 content: '';
@@ -1412,6 +1489,12 @@ body {
     border: 2px solid rgba($green, 0.4);
     padding: 3.2rem 5.8rem 4rem;
     border-radius: 2rem;
+    @media (max-width: $r_desk_1280) {
+        padding: 2.5rem 3rem 3rem;    
+    }
+    @media (max-width: $r_desk) {
+        padding: 2.5rem 2rem 3rem;    
+    }
 
     &__title {
         font-size: 30px;
@@ -1454,10 +1537,21 @@ body {
         max-width: 360px;
         margin-top: 1.6rem;
         margin-bottom: 0;
+        @media (max-width: $r_tab) { 
+            text-align: center;
+        }
     }
 
     &__link {
         margin-top: 1.2rem;
+        @media (max-width: $r_desk) {
+            padding: 2.4rem 2.3rem;
+        }
+        @media (max-width: $r_tab) {
+            margin-top: 1.2rem;
+            margin: 0 auto;
+        }
+
     }
 
     &__docs {
@@ -1486,6 +1580,9 @@ footer {
         justify-content: space-between;
         margin-top: 79px;
         margin-bottom: 21px;
+        /*@media (max-width: $r_tab) {
+            flex-direction: column;
+        }*/
 
         & .logo {
             width: 18.2rem;
