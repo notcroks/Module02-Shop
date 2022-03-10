@@ -132,6 +132,7 @@ body {
         @media (max-width:$r_mob_500) {
             width: 4.5rem;
             height: 4.5rem;
+            background-size: 2rem;
         }
 
         &:hover {
@@ -155,6 +156,9 @@ body {
         top: 0.6rem;
         @media (max-width: $r_desk_hd) {
             color: $green;
+        }
+        @media (max-width:$r_mob_500) {
+            font-size: 1rem;
         }
     }
 
@@ -181,6 +185,7 @@ body {
         @media (max-width:$r_mob_500) {
             width: 4.5rem;
             height: 4.5rem;
+            background-size: 1.9rem;
         }
 
         &:hover {
@@ -207,6 +212,7 @@ body {
         @media (max-width:$r_mob_500) {
             width: 4.5rem;
             height: 4.5rem;
+            background-size: 2rem;
         }
 
         &:hover {
@@ -290,6 +296,9 @@ body {
         @media (max-width: $r_tab) {
             text-align: center;
         }
+        @media (max-width:$r_mob_500) {
+            margin-top: 3.5rem;
+        }
     }
 
     &__flex {
@@ -366,6 +375,9 @@ body {
             margin-top: 3rem;
             border-radius: 100%;
             animation: shadow 5s linear infinite;
+        }
+        @media (max-width:$r_mob_500) {
+            max-width: 220px;
         }
     }
 
@@ -513,6 +525,10 @@ body {
             top: 120px;
             right: -50px;
         }
+        @media (max-width: $r_mob_500) {
+            top: 88px;
+            right: -38px;
+        }
     }
 
     &__cucumber {
@@ -527,12 +543,15 @@ body {
         }
         @media (max-width: $r_desk_1120) {
             top: 700px;
-            right: -19px;
-            left: auto;
+            right: -15px;
+            left: inherit;
             transform: rotate(90deg)
         }
         @media (max-width: $r_tab) {
             top: 630px;
+        }
+        @media (max-width: $r_mob_500) {
+            top: 480px;
         }
     }
 
@@ -690,6 +709,10 @@ body {
         padding-top: 5.4rem;
         padding-bottom: 6rem;
     }
+    @media (max-width: $r_mob_500) {
+        max-width: 210px;
+        padding-bottom: 7rem;
+    }
 }
 
 .swiper {
@@ -716,12 +739,21 @@ body {
             @media (max-width: $r_desk_hd) {
                 height: 400px;
             }
+            @media (max-width: $r_mob_500) {
+                height: 249px;
+                text-align: center;
+                padding: 2.2rem 1.7rem;
+            }
+            
 
             &:hover {
 
                 .swiper-slide__hover {
                     height: 233px;
                     opacity: 1;
+                    @media (max-width: $r_mob_500) {
+                        height: auto;
+                    }
                 }
 
                 &::after {
@@ -765,8 +797,10 @@ body {
             @media (max-width: $r_desk_1120) {
                 font-size: 2.15rem;
             }
-            @media (max-width: $r_tab_900) {
-                text-align: center;
+            @media (max-width: $r_mob_500) {
+                font-size: 1.75rem;
+                margin-top: 0;
+                margin-bottom: 2rem;
             }
         }
         
@@ -802,6 +836,10 @@ body {
         &__hover {
             height: 0;
             opacity: 0;
+            @media (max-width: $r_mob_500) {
+                height: auto;
+                opacity: 1;
+            }
         }
 
         &__text {
@@ -810,6 +848,9 @@ body {
             margin-top: 2.5rem;
             margin-bottom: 3.4rem;
             max-width: 263px;
+            @media (max-width: $r_mob_500) {
+                display: none;
+            }
         }
     
         &__link {
@@ -823,6 +864,11 @@ body {
             letter-spacing: 0.1rem;
             opacity: 0.8;
             transition: 0.3s;
+            @media (max-width: $r_mob_500) {
+                font-size: 1.25rem;
+                justify-content: center;
+                gap: 9px;
+            }
 
             &:hover {
                 opacity: 1;
@@ -837,6 +883,10 @@ body {
                 background-image: url(../images/plus.svg);
                 background-size: cover;
                 background-repeat: no-repeat;
+                @media (max-width: $r_mob_500) {
+                    width: 2.5rem;
+                    height: 2.5rem;
+                }
             }
         }
 
